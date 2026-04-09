@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream font-sans text-warmBrown;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-cream-dark;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-terracotta rounded-full;
+  }
+}
+
+@layer utilities {
+  .text-shadow-warm {
+    text-shadow: 0 2px 20px rgba(44, 26, 14, 0.4);
+  }
+}
