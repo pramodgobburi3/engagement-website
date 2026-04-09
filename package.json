@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "vite build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --cname snigdhaandpramod.com"
   },
   "dependencies": {
     "@react-three/drei": "^9.115.0",
